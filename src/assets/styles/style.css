@@ -26,7 +26,7 @@ body {
 }
 
 .profile__details p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .profile__details-social {
@@ -56,7 +56,6 @@ body {
   position: relative;
   display: flex;
   height: 100%;
-  z-index: -1;
 }
 
 a {
@@ -66,7 +65,7 @@ a {
 @media only screen and (max-width: 900px) {
   .profile {
     flex-direction: column-reverse;
-    margin: auto 20px;
+    margin: auto 30px;
   }
 
   .profile__picture-img {
