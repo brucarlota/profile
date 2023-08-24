@@ -1,0 +1,75 @@
+body {
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000 url('../images/pattern-rings.svg') no-repeat ;
+  background-position-y: 35%;
+  padding: 0;
+  margin: 0;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  margin: auto 100px;
+}
+
+.profile__details {
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 20px;
+}
+.profile__details-title {
+  font-size: 3rem;
+}
+
+.profile__details p {
+  font-size: 1.5rem;
+}
+
+.profile__details-social {
+  padding: 50px 0;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.profile__picture {
+  height: 100vh;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+
+  background: url('../images/pattern-circle.svg') no-repeat ;
+  background-position-y: 50%;
+  background-position-x: 10%;
+}
+
+.profile__picture-img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.profile__picture-img img {
+  position: relative;
+  display: flex;
+  height: 100%;
+  z-index: -1;
+}
+
+a {
+  color: #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .profile {
+    flex-direction: column-reverse;
+    margin: auto 20px;
+  }
+
+  .profile__picture-img {
+    height: 600px;
+  }
+}
