@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,29 @@
   <title>Bruna Carlota | Portfolio</title>
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <div class="profile__language">
+        <label class="label-language" for="language"><img src="./src/assets/images/globe-solid.svg" alt="globe solid icon"></label>
+        <select name="language" id="language" class="select-language" onchange="changeLanguage()">
+          <option value="en" id="optionEn">English</option>
+          <option value="pt" id="optionPt">Portuguese</option>
+        </select>
+      </div>
+    </div>
     <main class="profile">
       <div class="profile__details">
-        <h1 class="profile__details-title">Bruna Carlota</h1>
-        <p>I'm a frontend developer. My main hobbies are reading, watching movies and discovering new artists on Spotify! I am creative, very collaborative and committed! I'm also always up for challenges!</p>
-        <p>For more about me, <a href="mailto:brunacarlota@gmail.com">contact-me</a></p>
+        <div>
+          <h1 id="title" class="profile__details-title">Bruna Carlota</h1>
+          <p id="description">I'm a frontend developer. My main hobbies are reading, watching movies and discovering new artists on Spotify! I am creative, very collaborative and committed! I'm also always up for challenges!</p>
+          <p id="skills"><span class="profile__details-subtitle">Skills:</span> HTML, CSS, Javascript, React, Typescript, CI/CD, Pair programming, scrum, kanban</p>
+          <p id="contactMe">For more about me, contact-me</p>
+        </div>
         <div class="profile__details-social">
           <a href="https://github.com/brucarlota"><img src="./src/assets/images/icon-github.svg" alt="github icon"></a>
           <a href="https://www.frontendmentor.io/profile/brucarlota"><img src="./src/assets/images/icon-frontend-mentor.svg" alt="github icon"></a>
           <a href="https://www.linkedin.com/in/brunacarlota/"><img src="./src/assets/images/icon-linkedin.svg" alt="github icon"></a>
+          <a href="mailto:brunacarlota@gmail.com"><img src="./src/assets/images/icon-mail.svg" alt="email icon"></a>
         </div>
       </div>
       <div class="profile__picture">
@@ -24,6 +38,8 @@
           <img src="./src/assets/images/profile.jpg" alt="B&W picture with a black woman smiling">
         </div>
       </div>
-    </main>
+  </div>
+  </main>
+  <script src="./src/assets/scripts/script.js"></script>
 </body>
 </html>
